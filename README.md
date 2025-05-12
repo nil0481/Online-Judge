@@ -30,7 +30,7 @@
 <h2>📦 Installation</h2>
 <ol>
   <li>Clone the repository:
-    <pre><code>git clone https://github.com/your-username/online-code-judge.git</code></pre>
+    <pre><code>git clone https://github.com/nil0481/Online-Judge.git</code></pre>
   </li>
   <li>Install required dependencies:
     <pre><code>pip install -r requirements.txt</code></pre>

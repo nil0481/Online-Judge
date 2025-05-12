@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+<div> <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            {% else %}
+                <li><a href="{% url 'login' %}">Login</a></li>
+            {% endif %}
+        </ul></div>
+{% block content %}
+    <h2>Login</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+{% endblock %}

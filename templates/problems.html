@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+   {% if user.is_authenticated %}
+<div class="container">
+    <h1 class="mt-2" align="center">All Problems</h1>
+        <div class="result-column">
+          <ol class="list-group">
+               {% for problem in problems %}
+                    <li class="list-group-item"><a href="/problems/{{problem.pk}}">{{ problem.title }}</a></li>
+                {% empty %}
+                    <li>No problems found.</li>
+                {% endfor %}
+          </ol>
+        </div>
+      </div>
+            {% else %}
+               <h2>Login <a href="{% url 'login' %}">here</a> to see the problems</h2>
+            {% endif %}
+{% endblock %}

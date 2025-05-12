@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+ {% if user.is_authenticated %}
+ <div class="container">
+    <h1 class="mt-5">{{submission.problem}}</h1>
+    <div class="form-group mt-5">
+      <label for="codeArea">Your Code:</label>
+      <textarea class="form-control" id="codeArea" rows="20" disabled>{{submission.user_code}}</textarea>
+    </div>
+<button type="button" class="btn btn-warning" disabled> <b>{{submission.verdict}}</b></button>
+ </div>
+ {% else %}
+               <h2>Login <a href="{% url 'login' %}">here</a> to see the submissions</h2>
+            {% endif %}
+
+
+{% endblock %}

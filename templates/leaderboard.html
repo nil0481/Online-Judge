@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+   {% if user.is_authenticated %}
+                <h2>leaderboard list</h2>
+            {% else %}
+                <h2>Login <a href="{% url 'login' %}">here</a> to see the leaderboard</h2>
+            {% endif %}
+{% endblock %}

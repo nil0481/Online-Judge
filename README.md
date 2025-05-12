@@ -24,9 +24,6 @@
   <li><strong>Languages Supported:</strong> Java, C++, Python, C</li>
 </ul>
 
-<h2>📷 Screenshots (Optional)</h2>
-<p>Add screenshots of your UI here to show how it looks.</p>
-
 <h2>📦 Installation</h2>
 <ol>
   <li>Clone the repository:

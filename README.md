@@ -18,8 +18,8 @@
 
 <h2>🛠️ Tech Stack</h2>
 <ul>
-  <li><strong>Frontend:</strong> HTML/CSS/JavaScript (or mention your frontend framework if used)</li>
-  <li><strong>Backend:</strong> Django / Flask / Node.js (replace with what you're using)</li>
+  <li><strong>Frontend:</strong> HTML/CSS/JavaScript</li>
+  <li><strong>Backend:</strong> Django</li>
   <li><strong>Execution Environment:</strong> Docker for isolated code execution</li>
   <li><strong>Languages Supported:</strong> Java, C++, Python, C</li>
 </ul>
